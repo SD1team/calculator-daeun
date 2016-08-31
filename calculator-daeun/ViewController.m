@@ -123,7 +123,7 @@
         {
             resultValue = [[outputNumber text] doubleValue];
             currentValue = 0;
-            func = [sender tag];
+            func = (functionTag)[sender tag];
             break;
         }
             
