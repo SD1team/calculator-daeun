@@ -8,8 +8,30 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+enum functionTag
+{
+    add = 100,
+    minus,
+    multi,
+    divide,
+    equl,
+    clr,
+    fail
+};
 
+
+@interface ViewController : UIViewController
+{
+    int resultValue, currentValue, temp;
+    
+    enum functionTag func;
+}
+
+@property (strong, nonatomic) IBOutlet UILabel *outputNumber;
+
+- (IBAction)ClickNumber:(id)sender;
+
+- (IBAction)functionButton:(id)sender;
 
 @end
 
