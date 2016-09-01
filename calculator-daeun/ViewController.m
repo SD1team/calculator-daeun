@@ -116,7 +116,6 @@
         {
             if(firstOperand == YES)
             {
-                
                 temp = [[outputNumber text] doubleValue];
             
                 firstOperand = NO;

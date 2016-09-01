@@ -26,6 +26,7 @@ typedef enum
     
     functionTag func;
     BOOL firstOperand;
+    
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *outputNumber;
