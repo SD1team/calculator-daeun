@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-enum functionTag
+typedef enum
 {
     add = 100,
     minus,
@@ -17,14 +17,15 @@ enum functionTag
     equl,
     clr,
     fail
-};
+}functionTag;
 
 
 @interface ViewController : UIViewController
 {
     int resultValue, currentValue, temp;
     
-    enum functionTag func;
+    functionTag func;
+    BOOL firstOperand;
 }
 
 @property (strong, nonatomic) IBOutlet UILabel *outputNumber;

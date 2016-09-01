@@ -32,6 +32,7 @@
 {
     [outputNumber setText:@"0"];
     
+    firstOperand = YES;
     resultValue = 0;
     temp = 0;
     currentValue = 0;
@@ -95,9 +96,12 @@
     
     currentValue = (currentValue * 10) + (int)inputNumber;
     
+    firstOperand = YES;
+    
     [self displayNumber:currentValue];
     
 }
+
 
 - (IBAction)functionButton:(id)sender {
     
@@ -110,7 +114,13 @@
             
         case equl:
         {
-            temp = [[outputNumber text] doubleValue];
+            if(firstOperand == YES)
+            {
+                
+                temp = [[outputNumber text] doubleValue];
+            
+                firstOperand = NO;
+            }
             
             [self result];
             break;
@@ -123,7 +133,7 @@
         {
             resultValue = [[outputNumber text] doubleValue];
             currentValue = 0;
-            func = [sender tag];
+            func = (functionTag)[sender tag];
             break;
         }
             
