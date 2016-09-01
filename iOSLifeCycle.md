@@ -2,4 +2,4 @@
 < iOS Life Cycle 정리 >
 =
 
-![Alt text](C:\Users\daeun\Desktop\iphone-app-lifecycle1)
+![lifecycle](http://cfile26.uf.tistory.com/image/15620B3D4EDC536A0F73C9)
