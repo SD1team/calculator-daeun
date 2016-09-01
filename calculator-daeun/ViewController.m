@@ -20,7 +20,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self defaultNumber];
+    
     int i = 0;
+    int a = 0;
     
 }
 
