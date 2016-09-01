@@ -37,3 +37,5 @@ frame, bound, center 속성을 통해 뷰의 크기와 위치를 조절하는 �
 * Content Hugging (콘텐츠 허깅) : 최대 크기에 제한을 두는 것 
 * Compression Resistance (압축 제한) : 최소 크기에 제한을 두는 것 
 
+
+참고 : <http://meetkei.com/?p=3414>
